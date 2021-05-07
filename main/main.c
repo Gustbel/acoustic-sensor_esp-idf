@@ -14,11 +14,12 @@ void app_main(void)
 {
 	printf("\n	-- Acoustic Sensor lib test --\n");	
 
+	// Init Sensor
 	init_acoustic(true);		
 
 	while(1)
 	{
-		printf("Sound Level in dB: %s\nSound Level Threshold: %s\n\n", get_acoustic_analog(), get_acoustic_digital());
+		printf("Sound Level in dB: %s\n\n", get_acoustic_analog());
 		vTaskDelay(700 / portTICK_PERIOD_MS);
 	}
 }

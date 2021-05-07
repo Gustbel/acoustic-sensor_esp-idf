@@ -5,8 +5,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-void init_acoustic(bool);
+void init_acoustic();
 char* get_acoustic_analog();
-char* get_acoustic_digital();
 
 #endif
