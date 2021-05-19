@@ -6,6 +6,6 @@
 #include <stdbool.h>
 
 void init_acoustic();
-char* get_acoustic_analog();
+float get_acoustic_analog();
 
 #endif
